@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+h1 {
+  text-align: center;
+}
+.list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 15px;
+}
+.card {
+  border-radius: 50%;
+  width: 100%;
+  text-align: center;
+}
+.card img {
+  width: 100%;
+  overflow: hidden;
+}
