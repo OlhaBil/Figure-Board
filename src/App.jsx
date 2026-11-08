@@ -1,9 +1,12 @@
-import List from "./components/List.jsx";
+import { List } from "./components/List.jsx";
+import { Header } from "./components/List.jsx";
 const App = () => {
   return (
     <>
-      <h1>Figure Board</h1>
-      <List />
+      <Header />
+      <div className="container">
+        <List />
+      </div>
     </>
   );
 };

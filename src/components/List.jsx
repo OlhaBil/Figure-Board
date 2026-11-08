@@ -10,4 +10,12 @@ const List = () => {
     </section>
   );
 };
-export default List;
+const Header = () => {
+  return (
+    <div className="header">
+      <h1>Figure Board</h1>
+    </div>
+  );
+};
+export { List };
+export { Header };
