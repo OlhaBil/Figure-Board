@@ -1,5 +1,5 @@
 import imagebroken from "../assets/images/broken.svg";
-const Card = ({ title, img, author }) => {
+const Card = ({ title, img, manufacturer }) => {
   return (
     <div className="card">
       <div className="image-placeholder">
@@ -9,8 +9,10 @@ const Card = ({ title, img, author }) => {
           <img className="broken" src={imagebroken} />
         )}
       </div>
-      <h3>{title}</h3>
-      <p>{author}</p>
+      <div className="cardText">
+        <h3>{title}</h3>
+        <p>{manufacturer}</p>
+      </div>
     </div>
   );
 };

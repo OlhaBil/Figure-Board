@@ -1,19 +1,33 @@
 import { figures } from "../assets/figures-data.js";
 import Card from "./Card.jsx";
 
-const List = () => {
+const List = ({ selectedManufacture }) => {
+  const filteredFigures = figures.filter((figure) => {
+    return (
+      selectedManufacture.length === 0 ||
+      selectedManufacture.includes(figure.manufacturer)
+    );
+  });
+
   return (
     <section className="list">
-      {figures.map((figure) => {
+      {filteredFigures.map((figure) => {
         return <Card {...figure} key={figure.id} />;
       })}
     </section>
   );
 };
-const Header = () => {
+const Header = ({ filterToggle }) => {
   return (
     <div className="header">
-      <h1>Figure Board</h1>
+      <div className="header-container">
+        <h1>Figure Board</h1>
+        <button type="button" className="filter-button" onClick={filterToggle}>
+          <svg className="filter-icon">
+            <use href="/icons.svg#funnel--fill"></use>
+          </svg>
+        </button>
+      </div>
     </div>
   );
 };

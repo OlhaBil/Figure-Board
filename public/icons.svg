@@ -1,0 +1,7 @@
+<svg style="position: absolute; width: 0; height: 0; overflow: hidden;" aria-hidden="true" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <symbol id="funnel--fill" viewBox="0 0 32 32" fill="currentColor" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <path d="M28.4763 8.345l-0.01 0.0113L20 17.3962v6.9363A2 2 0 0 1 19.1088 26l-4 2.6675A2 2 0 0 1 12 27v-9.6038L3.5338 8.3563 3.5238 8.345A2 2 0 0 1 5 5h22a2 2 0 0 1 1.4763 3.345z" />
+        </symbol>
+    </defs>
+</svg>
