@@ -7,6 +7,8 @@ import kurose from "./images/kurose.jpg";
 import randk from "./images/randk.jpg";
 import panty from "./images/panty.jpg";
 import cyber from "./images/cyber.jpg";
+import ohto from "./images/ohto.jpg";
+import temari from "./images/temari.jpg";
 
 export const figures = [
   {
@@ -87,5 +89,32 @@ export const figures = [
     title: "Usamimi Pajama",
     manufacturer: "FuRyu",
     id: 13,
+  },
+  {
+    title: "Ohto Ai",
+    manufacturer: "Taito",
+    img: ohto,
+    id: 14,
+  },
+  {
+    title: "Tsukimura Temari",
+    manufacturer: "Bandai",
+    img: temari,
+    id: 15,
+  },
+  {
+    title: "Kinoshita Hideyoshi",
+    manufacturer: "FuRyu",
+    id: 16,
+  },
+  {
+    title: "Sakura",
+    manufacturer: "FuRyu",
+    id: 17,
+  },
+  {
+    title: "Frieren",
+    manufacturer: "Bandai",
+    id: 18,
   },
 ];

@@ -16,15 +16,15 @@ body {
   margin: 93px auto 0 auto;
   gap: 15px;
   transition:
-    grid-template-columns 1s ease,
-    gap 0.3s ease;
+    grid-template-columns 0.4s ease,
+    gap 0.4s ease;
 }
 .container.wout-sidebar {
   grid-template-columns: 1fr 0px;
   gap: 0;
 }
 .sidebar-container {
-  transition: opacity 0.3s ease;
+  transition: opacity 0.4s ease;
   min-width: 0;
 }
 .wout-sidebar .sidebar-container {
@@ -80,7 +80,7 @@ h2 {
   background-color: #fff;
   overflow: hidden;
   box-shadow: 0 0 3px 1px #646464;
-  transition: 0.3s;
+  transition: 0.4s;
 }
 .card:hover {
   scale: 105%;
