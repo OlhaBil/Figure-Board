@@ -1,8 +1,8 @@
 import sleepyBunny from "./images/sleepybunny.JPG";
-import game from "./images/game.JPG";
-import biCuteBunny from "./images/BiCute Bunny.JPG";
-import tMostMiku from "./images/T-Most Miku.JPG";
-import clearRem from "./images/Clear Rem.JPG";
+import game from "./images/game.jpg";
+import biCuteBunny from "./images/BiCute Bunny.jpg";
+import tMostMiku from "./images/T-Most Miku.jpg";
+import clearRem from "./images/Clear Rem.jpg";
 import kurose from "./images/kurose.jpg";
 import randk from "./images/randk.jpg";
 import panty from "./images/panty.jpg";
