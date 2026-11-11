@@ -20,11 +20,12 @@ const Sidebar = ({ selectedManufacture, setSelectedManufacture }) => {
         <ul>
           {manufacturers.map((manufacturer) => (
             <li key={manufacturer}>
-              <label>
+              <label className="MOptions">
                 <input
                   type="checkbox"
                   checked={selectedManufacture.includes(manufacturer)}
                   onClick={() => handleMChange(manufacturer)}
+                  className="MOptions"
                 ></input>
                 {manufacturer}
               </label>

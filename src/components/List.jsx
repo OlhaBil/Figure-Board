@@ -1,7 +1,6 @@
-import { figures } from "../assets/figures-data.js";
 import Card from "./Card.jsx";
 
-const List = ({ selectedManufacture }) => {
+const List = ({ selectedManufacture, figures }) => {
   const filteredFigures = figures.filter((figure) => {
     return (
       selectedManufacture.length === 0 ||
