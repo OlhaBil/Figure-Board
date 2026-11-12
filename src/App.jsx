@@ -7,7 +7,7 @@ import AddItem from "./components/AddItem.jsx";
 
 const App = () => {
   const [selectedManufacture, setSelectedManufacture] = useState([]);
-  const [filterOnOff, setFilterOnOff] = useState(true);
+  const [filterOnOff, setFilterOnOff] = useState(false);
   const [figuresList, setFiguresList] = useState(figures);
   const handleFilter = () => {
     setFilterOnOff(!filterOnOff);
