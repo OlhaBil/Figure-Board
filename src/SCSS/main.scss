@@ -11,7 +11,6 @@ body {
   font-family: "LXGW WenKai Mono TC";
 }
 .container {
-  width: 100%;
   max-width: 1400px;
   padding: 0 5vw;
   display: grid;
@@ -21,14 +20,14 @@ body {
   transition:
     grid-template-columns 0.4s ease,
     gap 0.4s ease;
+  @media (max-width: 700px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 .container.wout-sidebar {
   grid-template-columns: 1fr 0px;
   gap: 0;
-}
-.sidebar-container {
-  transition: opacity 0.4s ease;
-  min-width: 0;
 }
 .wout-sidebar .sidebar-container {
   opacity: 0;
