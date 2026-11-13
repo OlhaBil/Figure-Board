@@ -9,6 +9,7 @@ import panty from "./images/panty.jpg";
 import cyber from "./images/cyber.jpg";
 import ohto from "./images/ohto.jpg";
 import temari from "./images/temari.jpg";
+import sakura from "./images/sakura.jpg";
 
 export const figures = [
   {
@@ -135,6 +136,7 @@ export const figures = [
   {
     title: "Sakura",
     manufacturer: "FuRyu",
+    img: sakura,
     releaseYear: 2026,
     id: 17,
   },
