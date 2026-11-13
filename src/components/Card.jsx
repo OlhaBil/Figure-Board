@@ -1,7 +1,7 @@
 import imagebroken from "../assets/images/broken.svg";
-const Card = ({ title, img, manufacturer }) => {
+const Card = ({ title, img, manufacturer, onClick }) => {
   return (
-    <div className="card">
+    <div className="card" onClick={onClick}>
       <div className="image-placeholder">
         {img ? (
           <img className="photo" src={img} alt={title} />

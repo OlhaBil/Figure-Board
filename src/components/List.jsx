@@ -1,6 +1,6 @@
 import Card from "./Card.jsx";
 
-const List = ({ selectedManufacture, figures }) => {
+const List = ({ selectedManufacture, figures, onSelectedCard }) => {
   const filteredFigures = figures.filter((figure) => {
     return (
       selectedManufacture.length === 0 ||
@@ -11,7 +11,13 @@ const List = ({ selectedManufacture, figures }) => {
   return (
     <section className="list">
       {filteredFigures.map((figure) => {
-        return <Card {...figure} key={figure.id} />;
+        return (
+          <Card
+            {...figure}
+            key={figure.id}
+            onClick={() => onSelectedCard(figure)}
+          />
+        );
       })}
     </section>
   );

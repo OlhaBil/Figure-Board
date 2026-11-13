@@ -2,15 +2,21 @@ import { useState } from "react";
 const AddItem = ({ onAddItem }) => {
   const [itemTitle, setItemTitle] = useState("");
   const [itemManufacturer, setItemManufacturer] = useState("");
+  const [itemDate, setItemDate] = useState("");
+  const [itemImg, setItemImg] = useState("");
   const handleSubmit = (e) => {
     e.preventDefault();
     const newItem = {
       title: itemTitle,
       manufacturer: itemManufacturer,
+      dateObtained: itemDate,
+      img: itemImg,
     };
     onAddItem(newItem);
     setItemTitle("");
     setItemManufacturer("");
+    setItemDate("");
+    setItemImg("");
   };
   return (
     <section className="addItem">
@@ -36,6 +42,28 @@ const AddItem = ({ onAddItem }) => {
             id="manufacturer"
             value={itemManufacturer}
             onChange={(e) => setItemManufacturer(e.target.value)}
+          />
+        </div>
+        <div className="addInput">
+          <label htmlFor="gotDate" className="input">
+            Date obtained
+          </label>
+          <input
+            type="date"
+            id="gotDate"
+            value={itemDate}
+            onChange={(e) => setItemDate(e.target.value)}
+          />
+        </div>
+        <div className="addInput">
+          <label htmlFor="img" className="input">
+            Image
+          </label>
+          <input
+            type="file"
+            id="img"
+            value={itemImg}
+            onChange={(e) => setItemImg(e.target.value)}
           />
         </div>
         <button type="submit" className="addButton">
